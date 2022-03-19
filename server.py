@@ -44,7 +44,7 @@ def receive():
         broadcast(f'{nickname} joined the chat'.encode('ascii'))
         client.send(f'connected to the server!'.encode('ascii'))
 
-        thread = threading.thread(target=handle, args=(client,))
+        thread = threading.Thread(target=handle, args=(client,))
         thread.start()
 
 
