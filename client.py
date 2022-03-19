@@ -32,3 +32,6 @@ receive_thread.start()
 
 write_thread = threading.Thread(target=write)
 write_thread.start()
+
+# admin levels normal user and admin
+# to add features kick and ban users from chat room
